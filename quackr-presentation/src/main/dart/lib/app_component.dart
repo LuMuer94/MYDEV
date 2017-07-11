@@ -10,12 +10,16 @@ import 'package:quackr/components/login/login_component.dart';
     selector: 'my-app',
     directives: const [Login,ShowNewest,CreateNews],
     template: '''
-      <h1>Hello {{name}}</h1>
-      <login></login>
+      <h1 style="display: inline-block; vertical-align: middle; horizontal-align: middle">Welcome to {{name}}</h1>
+      <!--<nav>
+        <a [routerLink]="['Login']">Login</a>
+        <a [routerLink]="['Register']">Register</a>
+      </nav>-->
+        <login></login>
       <br />
       <show-newest style="display: inline-block; vertical-align: top;"></show-newest>
       <create-news style="display: inline-block; vertical-align: top; margin-left: 5em;"></create-news>
     ''')
 class AppComponent {
-  var name = 'Angular';
+  var name = 'QuackR';
 }
